@@ -9,6 +9,7 @@ var jsxLoader;
 var sassLoader;
 var cssLoader;
 var fileLoader = 'file-loader?name=[path][name].[ext]';
+var urlLoader = 'url?name=[path][name].[ext]';
 var htmlLoader = [
   'file-loader?name=[path][name].[ext]',
   'template-html-loader?' + [
@@ -69,8 +70,12 @@ var loaders = [
     loader: cssLoader
   },
   {
-    test: /\.jpg$|\.jpeg$|\.gif$|\.png$|\.ico|\.svg$|\.woff$|\.ttf$/,
+    test: /\.jpg$|\.gif$|\.png$|\.ico|\.svg$|\.woff$|\.ttf$/,
     loader: fileLoader
+  },
+  {
+    test: /\.jpeg$/,
+    loader: urlLoader
   },
   {
     test: /\.json$/,
