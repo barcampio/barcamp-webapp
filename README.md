@@ -5,5 +5,5 @@
 
 #Barcamp.io
 
-Barcamp.io is a Open Source service. More information soon :)
+Barcamp.io is Open Source service. More information soon :)
 
